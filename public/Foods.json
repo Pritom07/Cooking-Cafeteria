@@ -1,0 +1,80 @@
+[
+    {
+        "recipe_img": "https://i.ibb.co.com/9p4Bc4C/tagliatelle-pasta-with-tomatoes-chicken.jpg",
+        "recipe_id": "1",
+        "recipe_name": "Pasta With Chicken",
+        "short_description": "A creamy and delicious pasta dish with tender chicken pieces.",
+        "ingredients": [
+            "pasta",
+            "chicken",
+            "cream"
+        ],
+        "preparing_time": 30,
+        "calories": 450
+    },
+    {
+        "recipe_img": "https://i.ibb.co.com/tDTKxgc/plate-biryani-with-bunch-food-it.jpg",
+        "recipe_id": "2",
+        "recipe_name": "Chicken Biriyani",
+        "short_description": "A flavorful and aromatic rice dish with marinated chicken.",
+        "ingredients": [
+            "rice",
+            "chicken",
+            "spices"
+        ],
+        "preparing_time": 60,
+        "calories": 600
+    },
+    {
+        "recipe_img": "https://i.ibb.co.com/2ttHk4J/side-view-rice-garnish-with-fried-onion-carrot-greens-chili-pepper-table.jpg",
+        "recipe_id": "3",
+        "recipe_name": "Fried Rice",
+        "short_description": "A quick and tasty stir-fried rice dish with veggies and eggs.",
+        "ingredients": [
+            "rice",
+            "egg",
+            "soy sauce"
+        ],
+        "preparing_time": 20,
+        "calories": 300
+    },
+    {
+        "recipe_img": "https://i.ibb.co.com/wLjPtGk/side-view-caesar-salad-with-chicken-parmesan-cheese-white-bowl-wooden-board.jpg",
+        "recipe_id": "4",
+        "recipe_name": "Caesar Salad",
+        "short_description": "A classic salad with fresh lettuce, croutons, and creamy dressing.",
+        "ingredients": [
+            "lettuce",
+            "croutons",
+            "parmesan cheese"
+        ],
+        "preparing_time": 15,
+        "calories": 200
+    },
+    {
+        "recipe_img": "https://i.ibb.co.com/zsFqdwL/italian-pasta-spaghetti-with-meatballs-parmesan-cheese-black-plate-dark-rustic-wood-background-dinne.jpg",
+        "recipe_id": "5",
+        "recipe_name": "Spaghetti (Italian Pasta)",
+        "short_description": "An authentic Italian spaghetti with rich tomato sauce.",
+        "ingredients": [
+            "spaghetti",
+            "tomato sauce",
+            "olive oil"
+        ],
+        "preparing_time": 25,
+        "calories": 350
+    },
+    {
+        "recipe_img": "https://i.ibb.co.com/h9GRsxj/top-view-turkey-leg-soup-with-bell-pepper-bread.jpg",
+        "recipe_id": "6",
+        "recipe_name": "Chicken Soup",
+        "short_description": "A comforting and healthy soup with tender chicken and vegetables.",
+        "ingredients": [
+            "chicken",
+            "carrots",
+            "celery"
+        ],
+        "preparing_time": 40,
+        "calories": 250
+    }
+]
