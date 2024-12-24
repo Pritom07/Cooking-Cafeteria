@@ -1,6 +1,6 @@
 const Topbanner = () => {
     return (
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-7xl mx-auto pl-1">
             <div
                 className="hero"
                 style={{

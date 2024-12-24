@@ -14,7 +14,7 @@ const Recipe = ({ recipe }) => {
                 </figure>
                 <div className="card-body">
                     <h2 className="card-title font-semibold text-2xl">{recipe_name}</h2>
-                    <p className='text-lg text-[#878787] border-b-2 border-slate-200 pb-4'>{short_description}</p>
+                    <p className='text-lg text-slate-500 border-b-2 border-slate-200 pb-4'>{short_description}</p>
                     <h2 className='font-medium text-lg mt-2'>Ingredients : {ingredients.length}</h2>
                     <ul className='pb-2'>
                         {
