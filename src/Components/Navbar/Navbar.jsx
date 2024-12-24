@@ -38,11 +38,11 @@ const Navbar = () => {
                         <input
                             type="text"
                             placeholder="Search"
-                            className="input input-bordered w-24 md:w-auto"
+                            className="input input-bordered w-24 md:w-auto border-2 border-green-400"
                         />
                     </div>
 
-                    <div className="dropdown dropdown-end mr-3">
+                    <div className="dropdown dropdown-end mr-4">
                         <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
                             <div className="w-10 rounded-full">
                                 <img
