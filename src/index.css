@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body{
+    height:100%;
+    width:100%;
+    padding: 0;
+    overflow-x: hidden;
+    max-width: 1360px;
+    margin: 0 auto;
+    font-family: "Lexend", serif;
+}
