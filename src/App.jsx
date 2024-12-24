@@ -12,7 +12,7 @@ function App() {
       <Navbar></Navbar>
       <Topbanner></Topbanner>
       <RecipeHeading></RecipeHeading>
-      <div>
+      <div className='flex max-w-7xl mx-auto mt-9 mb-6'>
         <Recipes></Recipes>
         <Calculations></Calculations>
       </div>

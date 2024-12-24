@@ -1,8 +1,8 @@
 
 const Calculations = () => {
     return (
-        <div>
-
+        <div className="w-1/3">
+            <h1>Calculation here</h1>
         </div>
     );
 };
