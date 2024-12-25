@@ -3,7 +3,7 @@ import { GoDotFill } from "react-icons/go";
 import { MdTimer } from "react-icons/md";
 import { PiBowlFoodFill } from "react-icons/pi";
 
-const Recipe = ({ recipe }) => {
+const Recipe = ({ recipe, handlerecipes }) => {
     const { recipe_img, recipe_name, short_description, ingredients, preparing_time, calories } = recipe;
     return (
         <div>
@@ -27,7 +27,7 @@ const Recipe = ({ recipe }) => {
                         <p className='flex items-center'><MdTimer /><span className='ml-1'>{preparing_time} minutes</span></p>
                         <p className='flex items-center'><PiBowlFoodFill /><span className='ml-1'>{calories} calories</span></p>
                     </div>
-                    <button className="btn btn-success rounded-3xl mt-3">Want to Cook</button>
+                    <button onClick={() => handlerecipes(recipe)} className="btn btn-success rounded-3xl mt-3">Want to Cook</button>
                 </div>
             </div>
         </div>
@@ -35,7 +35,8 @@ const Recipe = ({ recipe }) => {
 };
 
 Recipe.propTypes = {
-    recipe: PropTypes.object.isRequired
+    recipe: PropTypes.object.isRequired,
+    handlerecipes: PropTypes.func.isRequired
 }
 
 export default Recipe;
