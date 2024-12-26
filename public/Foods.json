@@ -41,7 +41,7 @@
     {
         "recipe_img": "https://i.ibb.co.com/wLjPtGk/side-view-caesar-salad-with-chicken-parmesan-cheese-white-bowl-wooden-board.jpg",
         "recipe_id": "4",
-        "recipe_name": "Caesar Salad",
+        "recipe_name": "Cheesy Caesar Salad",
         "short_description": "A classic salad with fresh lettuce, croutons, and creamy dressing.",
         "ingredients": [
             "lettuce",
@@ -67,7 +67,7 @@
     {
         "recipe_img": "https://i.ibb.co.com/h9GRsxj/top-view-turkey-leg-soup-with-bell-pepper-bread.jpg",
         "recipe_id": "6",
-        "recipe_name": "Chicken Soup",
+        "recipe_name": "Spicy Chicken Soup",
         "short_description": "A comforting and healthy soup with tender chicken and vegetables.",
         "ingredients": [
             "chicken",

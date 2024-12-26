@@ -15,63 +15,60 @@ const Calculations = ({ recipes, handlecooking, currentcook, times, calories }) 
 
     return (
         <div className="w-1/3 ml-6 border-2 border-slate-200 rounded-2xl py-3">
-            <h1 className="font-bold text-2xl text-center mb-4">Want to Cook : {recipes.length}</h1>
-            <div className="border-t-2 border-slate-200 "></div>
-            <table className="mt-4 text-slate-600">
-                <tr className="flex justify-around">
-                    <th className="pl-14">Name</th>
-                    <th className="pl-14">Time</th>
-                    <th className="pl-8">Calories</th>
-                </tr>
+
+            <table className='table-fixed w-96 mx-auto'>
+                <caption className="caption-top font-bold text-2xl border-b-2 border-slate-200 mb-4 pb-4">
+                    Want to Cook : {recipes.length}
+                </caption>
+                <thead>
+                    <tr>
+                        <th className='pb-3'>Name</th>
+                        <th className='pb-3'>Time</th>
+                        <th className='pb-3'>Calories</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {
+                        recipes.map((recipe, idx) => <tr key={idx} className='mt-3 text-slate-600 bg-slate-100'>
+                            <td className="text-center p-2">{recipe.recipe_name}</td>
+                            <td className="text-center p-2">{recipe.preparing_time} minutes</td>
+                            <td className="text-center p-2">{recipe.calories} calories</td>
+                            <td><button onClick={() => handlecooking(recipe)} className="btn btn-success rounded-2xl text-black p-2">Preparing</button></td>
+                        </tr>
+                        )
+                    }
+                </tbody>
             </table>
 
 
-            {
-                recipes.map(recipe => <table key={recipe.recipe_id} className='mt-3 text-slate-600'>
-                    <tbody>
-                        <tr className='flex justify-between items-center bg-slate-100 p-2'>
-
-                            <td className="text-center">{recipe.recipe_name}</td>
-                            <td className="text-center">{recipe.preparing_time} minutes</td>
-                            <td className="text-center">{recipe.calories} calories</td>
-                            <td><button onClick={() => handlecooking(recipe)} className="btn btn-success rounded-2xl text-black">Preparing</button></td>
-                        </tr>
-                    </tbody>
-                </table>)
-            }
-
-
-            <div className="mt-12 mb-3">
-                <h1 className="font-bold text-2xl text-center mb-4">Currently cooking : {currentcook.length}</h1>
-                <div className="border-t-2 border-slate-200 "></div>
-                <table className="mt-4 text-slate-600">
-                    <tr className="flex justify-around">
-                        <th className="pl-12">Name</th>
-                        <th className="pl-16">Time</th>
-                        <th className="pl-8">Calories</th>
+            <table className='table-fixed  w-96 mx-auto mt-6'>
+                <caption className="caption-top border-b-2 border-slate-200 font-bold text-2xl mb-4 pb-4">
+                    Currently cooking : {currentcook.length}
+                </caption>
+                <thead>
+                    <tr>
+                        <th className='pb-3'>Name</th>
+                        <th className='pb-3'>Time</th>
+                        <th className='pb-3'>Calories</th>
                     </tr>
-                </table>
-            </div>
-
-
-            {
-                currentcook.map(cookrecipe => <div key={cookrecipe.recipe_id} className="bg-slate-100">
-                    <table className="p-4">
-                        <tr>
-                            <td className="p-2">1</td>
-                            <td className="p-2">{cookrecipe.recipe_name}</td>
-                            <td className="p-2 text-center">{cookrecipe.preparing_time} minutes</td>
-                            <td className="p-2 text-center">{cookrecipe.calories} calories</td>
-                        </tr>
-                    </table>
-                </div>)
-            }
-
-            <div className='font-medium text-lg text-slate-600 flex justify-evenly ml-6'>
-                <p>Total Time = {timehandling()} minutes</p>
-                <p>Total Calories = {calorihandling()} calories</p>
-            </div>
-
+                </thead>
+                <tbody>
+                    {
+                        currentcook.map(cookrecipe => <tr key={cookrecipe.recipe_id} className="bg-slate-100 pt-6">
+                            {/* <td className="p-2">1</td> */}
+                            <td className="pl-2 p-2 text-slate-600">{cookrecipe.recipe_name}</td>
+                            <td className="p-2 text-center text-slate-600">{cookrecipe.preparing_time} minutes</td>
+                            <td className="p-2 text-center text-slate-600">{cookrecipe.calories} calories</td>
+                        </tr>)
+                    }
+                    <tr className='text-slate-600 font-medium text-base'>
+                        <td></td>
+                        <td className='pr-2 pt-2 text-cente'>Total Time = {timehandling()} minutes</td>
+                        <td className='pl-2 pt-2 text-cente'>Total Calories = {calorihandling()} calories</td>
+                    </tr>
+                </tbody>
+            </table>
 
         </div>
     );
