@@ -56,7 +56,6 @@ const Calculations = ({ recipes, handlecooking, currentcook, times, calories }) 
                 <tbody>
                     {
                         currentcook.map(cookrecipe => <tr key={cookrecipe.recipe_id} className="bg-slate-100 pt-6">
-                            {/* <td className="p-2">1</td> */}
                             <td className="pl-2 p-2 text-slate-600">{cookrecipe.recipe_name}</td>
                             <td className="p-2 text-center text-slate-600">{cookrecipe.preparing_time} minutes</td>
                             <td className="p-2 text-center text-slate-600">{cookrecipe.calories} calories</td>

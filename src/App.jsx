@@ -5,6 +5,7 @@ import Navbar from './Components/Navbar/Navbar'
 import RecipeHeading from './Components/RecipeHeading/RecipeHeading'
 import Recipes from './Components/Recipes/Recipes'
 import Topbanner from './Components/Topbanner/Topbanner'
+import { toast } from 'react-toastify';
 
 function App() {
   const [recipes, Setrecipes] = useState([]);
@@ -13,8 +14,16 @@ function App() {
   const [calories, Setcalories] = useState(0);
 
   const handlerecipes = (recipe) => {
-    const newrecipes = [...recipes, recipe];
-    Setrecipes(newrecipes);
+    const res = recipes.find(eachrecipe => eachrecipe.recipe_id === recipe.recipe_id)
+    if (res) {
+      toast.warn("You have already added this recipe");
+      return;
+    }
+    else {
+      const newrecipes = [...recipes, recipe];
+      Setrecipes(newrecipes);
+    }
+
   }
 
   const handlecooking = (recipe) => {

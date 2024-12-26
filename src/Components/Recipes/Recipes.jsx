@@ -12,7 +12,7 @@ const Recipes = ({ handlerecipes }) => {
     return (
         <div className="grid grid-cols-2 gap-7 w-2/3">
             {
-                recipes.map(recipe => <Recipe key={recipe.recipe_id} recipe={recipe} handlerecipes={handlerecipes}></Recipe>)
+                recipes.map(recipe => <Recipe key={recipe.recipe_id} recipe={recipe} handlerecipes={handlerecipes} ></Recipe>)
             }
         </div>
     );

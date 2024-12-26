@@ -13,3 +13,9 @@ body{
     margin: 0 auto;
     font-family: "Lexend", serif;
 }
+
+.toastBody {
+    font-family: "Atlas Grotesk Web", Arial, Helvetica, sans-serif;
+    color:white;
+    font-size: 2rem;
+  }
